@@ -1,15 +1,18 @@
+package gameoflife
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-@main
-def main(): Unit = {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  (1 to 5).map(println)
+import scala.io.StdIn
+import scala.util.Try
 
-  for (i <- 1 to 5) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    println(s"i = $i")
-  }
-}
+object Main extends App:
+  val BoardSize      = 15
+  val MaxGenerations = 1000
 
+    def readInt(prompt: String, min: Int, max: Int): Int = ??? //TODO
+
+    def readHumanOrAI(prompt: String): Boolean = ??? //TODO
+
+    def readYesNo(prompt: String): Boolean = ??? //TODO
+
+    def describeWinner(result: GameResult): String = ??? //TODO
+  println("EL JUEGO DE LA VIDA: la batalla de los patrones")
+  ??? //TODO pedir el numero de celulas a poner, elegir las estrategias, jugar, animar y mostrar el resultado
